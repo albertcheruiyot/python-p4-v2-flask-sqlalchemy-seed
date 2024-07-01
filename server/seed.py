@@ -6,6 +6,9 @@ from models import db, Pet
 
 with app.app_context():
 
+    # Delete all rows in the "pets" table
+    Pet.query.delete()
+
     # Create an empty list
     pets = []
 
